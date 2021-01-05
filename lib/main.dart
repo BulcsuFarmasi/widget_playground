@@ -76,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
         children: <Widget>[
           Container(
             height: 100,
-            child: Text('Item 1 - pretty big!'),
+            child: Text('Item 1'),
             color: Colors.red,
           ),
           Flexible(
@@ -88,10 +88,13 @@ class _MyHomePageState extends State<MyHomePage> {
               color: Colors.blue,
             ),
           ),
-          Container(
-            height: 100,
-            child: Text('Item 3'),
-            color: Colors.orange,
+          Flexible(
+            fit: FlexFit.tight,
+            child: Container(
+              height: 100,
+              child: Text('Item 3'),
+              color: Colors.orange,
+            ),
           ),
         ],
       ), // This trailing comma makes auto-formatting nicer for build methods.
