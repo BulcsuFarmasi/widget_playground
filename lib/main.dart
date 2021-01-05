@@ -90,8 +90,8 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
           Flexible(
-            flex: 2,
-            fit: FlexFit.tight,
+            flex: 1,
+            fit: FlexFit.loose,
             child: Container(
               height: 100,
               child: Text('Item 3'),
